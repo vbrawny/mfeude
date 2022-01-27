@@ -1,6 +1,6 @@
 const {merge} = require('webpack-merge'); //used to merge different files of webpack dev+common
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
@@ -18,9 +18,9 @@ const devConfig = {
         }
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: './public/index.html'
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: './public/index.html'
+        // }),
         //NR
         new ModuleFederationPlugin({
             name:'container',
