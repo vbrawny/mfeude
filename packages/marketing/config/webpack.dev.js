@@ -39,4 +39,4 @@ const devConfig = {
     ]
 };
 
-module.exports = merge(commonConfig,devConfig); //devConfig will override comonConfig
+module.exports = merge(commonConfig,devConfig); //devConfig will override commonConfig
