@@ -1,8 +1,12 @@
+[Reference Github Url](https://github.com/vbrawny/mfeude)
+
+```sh
 npm install --global windows-build-tools
 
 npm config set python c:\python27\python.exe
+```
 
-if we donot set the environment variable we can try this.
+If we donot set the environment variable we can try this.
 
 # Summary
 
@@ -71,8 +75,10 @@ We are not using directly cli apps as they donot support webpack 5 like "react-s
 create github repo named mfeud
 
 For creating new github reference to local system
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+[Generating a new ssh key and adding it to ssh agent.](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+[Adding ssh agent's ssh key to github.](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ```sh
 ls -al ~/.ssh
@@ -83,7 +89,7 @@ eval "$(ssh-agent -s)"
 
 ssh-add ~/.ssh/id_ed25519
 
- clip < ~/.ssh/id_ed25519.pub
+clip < ~/.ssh/id_ed25519.pub
 ```
 
 now the key is copied to clipboard.
@@ -92,7 +98,10 @@ Click Add sshkey button
 Paste the key
 
 Now from the gitbash terminal
+
+```sh
 git remote add origin git@github.com:vbrawny/mfeude.git
 git push origin master
+```
 
-provide the phrase if asked
+Provide the phrase if asked
