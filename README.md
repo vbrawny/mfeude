@@ -176,3 +176,68 @@ npm run build
 ```
 
 The build should happen successfully and a dist folder with all necessary files should be created inside container folder.
+
+### 52
+
+Follow the above steps for marketing application.
+
+### 53
+
+We use github actions to implement CI CD pipelines.
+Any event occured in github repo
+
+Run all worklows associated to this events
+
+Workflow
+
+We use four workflows 1.Container 2.Marketing 3.Dashboard and 4.Auth
+
+1.Container
+
+- Whenever code is pushed to the master/main branch and this commit contains a change to the 'container' folder.
+
+- Then "change into container folder".
+
+- Then "Install Dependencies".
+
+- Then "Create a production build using webpack".
+
+- Then "Upload the result to AWS S3"
+
+  2.Marketing
+
+- Whenever code is pushed to the master/main branch and this commit contains a change to the 'marketing' folder.
+
+- Then "change into marketing folder".
+
+- Then "Install Dependencies".
+
+- Then "Create a production build using webpack".
+
+- Then "Upload the result to AWS S3"
+
+  3.Dashboard
+
+- Whenever code is pushed to the master/main branch and this commit contains a change to the 'dashboard' folder.
+
+- Then "change into dashboard folder".
+
+- Then "Install Dependencies".
+
+- Then "Create a production build using webpack".
+
+- Then "Upload the result to AWS S3"
+
+  4.Auth
+
+- Whenever code is pushed to the master/main branch and this commit contains a change to the 'auth' folder.
+
+- Then "change into auth folder".
+
+- Then "Install Dependencies".
+
+- Then "Create a production build using webpack".
+
+- Then "Upload the result to AWS S3"
+
+This should be continuous process.
