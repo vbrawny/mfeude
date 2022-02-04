@@ -15,7 +15,9 @@ const prodConfig = {
     mode: 'production',
     output: {
         // cache buster naming convention. to avoid cache issues on js file in browser
-        filename:'[name].[contenthash].js'
+        filename:'[name].[contenthash].js',
+        //this will as per the aws bucket
+        publicPath: '/container/latest/'
     },
     //plugins
     plugins: [
