@@ -26,7 +26,7 @@ const prodConfig = {
             remotes: {
                 marketing:`marketing@${domain}/marketing/latest/remoteEntry.js` //this is as per the s3 bucket
             },
-            shared: packageJson.dependencies
+            shared: packageJson.dependencies      
         })
     ]
 }
